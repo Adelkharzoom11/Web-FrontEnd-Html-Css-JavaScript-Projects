@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="brands.min.js">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css1/sty.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.click2').click(function(){
+          $('.popup_box4').css({
+            "opacity":"1" ," pointer-events" :"auto"
+          });
+
+        });
+        $('.btn11').click(function(){
+        $('.popup_box4').css({ 
+  
+  "opacity":"0" , "pointer-events":"none"
+
+       });
+        });
+        
+        $('.btn12').click(function(){
+        $('.popup_box4').css({ 
+  
+  "opacity":"0" , "pointer-events" :"none"
+
+       });
+       alert("erorr");
+        });
+      });
+    </script>
+</head>
+
+<body>
+  <!-- فورم الادخال 1 -->
+  <form class="row g-3 needs-validation" novalidate>
+    <hr size="10px" color="#36A9E1 " class="col-md-1 gy-3" >
+    <h1><i class="fa-brands fa-buffer"></i>فورم الإدخال</h1>
+    <h4>البيانات الشخصية</h4><br>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">  معرف الطالب (ID) </label>
+
+        <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustom01" placeholder=" &#xf2c2; أدخل المعرف (ID) " required>
+        <div class="valid-feedback">
+          Please enter ID!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">الاسم الكامل</label>
+
+        <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustom02" placeholder=" &#xf2c1; أدخل الاسم الكامل" required >
+        <div class="valid-feedback">
+          Please enter name!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">رقم الهاتف</label>
+
+        <div class="input-group has-validation">
+          <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustomUsername" placeholder=" &#xf095; أدخل رقم الهاتف" required>
+         
+          <div class="invalid-feedback">
+            Please choose a phone number.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom03" class="form-label">الايميل</label>
+        
+        <input style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="email" class="form-control" id="validationCustom03"  placeholder=" &#xf0e0; أدخل الايميل" required>
+        <div class="invalid-feedback">
+          Please providea your Email.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">الجنس</label>
+        <div class="form-control">
+          <div class="buttons d-flex">
+
+              <i class="icon fas fa-mars"></i>
+              <input  id="male" type="radio" name="gender" value="male" checked>ذكر
+              <input id="female" type="radio" name="gender" value="fmale">أنثى
+      
+          </div>
+      </div>
+    </div>
+   
+      <div class="col-md-4">
+        <label for="validationCustom05" class="form-label">التخصص</label>
+
+        <select class="form-select" id="validationCustom05" aria-placeholder=" أدخل تخصصك الدراسي" required>
+          <option selected disabled value="">Choose...</option>
+          <option>هندسة مدنية </option>
+          <option>هندسة تقنية  </option>
+          <option> هندسة اتصالات</option>
+        </select>
+        <div class="invalid-feedback">
+          Please provide a specialization.
+        </div></div>
+
+      <div class="col-md-4">
+        <label for="validationCustom06" class="form-label">  الجامعة </label>
+
+        <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustom06" placeholder="&#xf19c; أدخل اسم الجامعة"  required>
+        <div class="valid-feedback">
+          Please enter university!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom07" class="form-label">موقع الجامعة</label>
+
+        <input   style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustom07" placeholder="&#xf19d; أدخل موقع الجامعة" required>
+        <div class="valid-feedback">
+          Please enter university location!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom08" class="form-label">اسم التدريب</label>
+
+        <select class="form-select" id="validationCustom08" aria-placeholder=" أدخل اسم التدريب" required>
+          <option selected disabled value="">Choose...</option>
+          <option>UX-UL </option>
+          <option>Front - End </option>
+          <option> Back-End</option>
+        </select>
+        <div class="invalid-feedback">
+          Please provide a specialization.
+        </div></div>
+     <br>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">حفظ</button>
+      </div>
+    </form>
+    <br><br>
+       
+    
+       
+      <br>
+     <br>
+     <br>
+
+ <!-- فورم تسجيل الدخول  1 -->
+
+            <form name="f" method="post" dir="rtl" class="row g-3 needs-validation" novalidate >
+              
+      <div class="container">
+
+        <div class="row ">
+         
+          <div class="col ">
+
+                <nav class="navbar navbar-expand-lg $white">
+
+                    <div class="container-fluid lk"> 
+                   
+                 
+                   <button class="uy"> <b>تسجيل دخول </b></button> 
+                    
+                
+                    </div>
+                    
+                  </nav>
+        <br>
+        
+        
+        <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="email"  name="name" placeholder="&#xf0e0; البريد الالكتروني  "  class="by" >
+        
+        <br>
+       
+        <input  style=" font-family: 'font awesome 5 free'; font-weight: 700;" 
+        type="password" name="password" placeholder=" &#xf023; كلمة المرور "  class="by"> 
+    
+        <br>
+
+        <p>  هل نسيت كلمة السر ؟ <b><span class="cy">اعادة تعين </span></b> </p> 
+        <br>
+        <input type="submit" name="botton " value="تسجيل الدخول " class="dy">
+        
+  
+      </form >
+      
+          </div>
+          <div class="col  d-none d-sm-block  ">
+
+            <div>
+
+                <img src="Mask Group 3 (1).svg" class="ey" >
+                
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+<br><br><br>
+
+
+ <!-- فورم الادخال 2 -->
+      
+      <form class="row g-3 needs-validation" novalidate>
+        <hr size="10px" color="#36A9E1 " class="col-md-1 gy-3" >
+        <h1><i class="fa-brands fa-buffer"></i>فورم الإدخال</h1>
+        <h4>البيانات الشخصية</h4><br>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">  معرف الطالب (ID) </label>
+
+            <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustom01" placeholder=" &#xf2bb; أدخل المعرف (ID) " required>
+            <div class="valid-feedback">
+              Please enter ID!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">الاسم الكامل</label>
+
+            <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustom02" placeholder=" &#xf2c1; أدخل الاسم الكامل" required >
+            <div class="valid-feedback">
+              Please enter name!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">رقم الهاتف</label>
+
+            <div class="input-group has-validation">
+              <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustomUsername" placeholder=" &#xf095; أدخل رقم الهاتف" required>
+             
+              <div class="invalid-feedback">
+                Please choose a phone number.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom03" class="form-label">الايميل</label>
+
+            
+            <input style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="email" class="form-control" id="validationCustom03"  placeholder=" &#xf0e0; أدخل الايميل" required>
+            <div class="invalid-feedback">
+              Please providea your Email.
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <label for="validationCustom04" class="form-label">الجنس</label>
+            <div class="form-control">
+              <div class="buttons d-flex">
+
+                  <i class="icon fas fa-mars"></i>
+                  <input  id="male" type="radio" name="gender" value="male" checked>ذكر
+                  <input id="female" type="radio" name="gender" value="fmale">أنثى
+          
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">التخصص</label>
+  
+          <select class="form-select" id="validationCustom05" aria-placeholder=" أدخل تخصصك الدراسي" required>
+            <option selected disabled value="">Choose...</option>
+            <option>هندسة مدنية </option>
+            <option>هندسة تقنية  </option>
+            <option> هندسة اتصالات</option>
+          </select>
+          <div class="invalid-feedback">
+            Please provide a specialization.
+          </div></div>
+          
+          <div class="col-md-4">
+            <label for="validationCustom06" class="form-label" > الجامعة </label>
+
+            <input style=" font-family: 'font awesome 5 free'; font-weight: 700;" type="text" class="form-control" id="validationCustom06" placeholder="&#xf19c; أدخل اسم الجامعة"  required>
+            <div class="valid-feedback">
+              Please enter university!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom07" class="form-label">موقع الجامعة</label>
+
+            <input style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="text" class="form-control" id="validationCustom07" placeholder=" &#xf19d; أدخل موقع الجامعة" required>
+            <div class="valid-feedback">
+              Please enter university location!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom08" class="form-label">اسم التدريب</label>
+
+            <select  class="form-select" id="validationCustom08" aria-placeholder="أدخل اسم التدريب" required>
+              <option selected disabled value="">Choose...</option>
+              <option>UX-UL </option>
+              <option>Front - End </option>
+              <option> Back-End</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a specialization.
+            </div></div>
+         <br>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">حفظ</button>
+          </div>
+        </form>
+        <br><br>
+           
+        
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid ">
+            
+            <select class="form-select " aria-label="Default select example" >
+              <option selected>اصحاب المصلحة </option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>مجال العمل </option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>المسمى الوظيفي </option>
+            </select> 
+            <div class="col-2">
+              <button type="submit" class="btn-but1"> بحث </button></div>
+            </div>
+        </nav>
+
+
+<br><br><br>
+
+
+
+<!--كاردات -->
+
+<table class="table table-bordered jlm">
+  
+    <tr>
+      <td>
+      <div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="col" dir="ltr">
+          <div class="card v">
+          
+            <div class="card-body">
+           <form class="hjk">
+           <img src="op.svg.jfif" class="opp">
+            <div class="ad">
+            <label > ID :</label>
+            <input type="text" placeholder="0" id="uu1" class="uu" ><br>
+
+            <label> Name :     </label>
+
+            <input type="text" placeholder="..." class="uu"><br>
+            
+            <label> Gender :</label>
+            
+            <input type="radio" name="a" value="mail" class="uu" checked> mail
+            <input type="radio" name="a" value="femail" class="uu">femail
+           <br>
+            <label> phone :</label>
+            <input type="tel" placeholder="..." class="uu" ><br>
+
+
+            <label> Email:</label>
+            <input type="email" placeholder="..." class="uu" ><br>
+
+            <label> stading:</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+
+            <label> name Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Gps Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Trinning :</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+        </div>
+
+        <div style="font-family:'Font Awesome 5 Free'; font-weight:700">
+        <i class="fa-thin fa-pen-nib"></i></div>
+           </form>
+            </div>
+          </div>
+        </div>
+        </div></td>
+
+     
+     <td>
+      <div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="col" dir="ltr">
+          <div class="card v">
+          
+            <div class="card-body">
+           <form class="hjk">
+           <img src="op.svg.jfif" class="opp">
+            <div class="ad">
+            <label > ID :</label>
+            <input type="text" placeholder="0" id="uu1" class="uu" ><br>
+
+            <label> Name :     </label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Gender :</label>
+            <input type="radio" name="a" value="mail" class="uu" checked> mail
+            <input type="radio" name="a" value="femail" class="uu">femail
+           <br>
+            <label> phone :</label>
+            <input type="tel" placeholder="..." class="uu" ><br>
+
+            <label> Email:</label>
+            <input type="email" placeholder="..." class="uu" ><br>
+
+            <label> stading:</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+
+            <label> name Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Gps Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Trinning :</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+        </div>
+        <div style="font-family:'Font Awesome 5 Free'; font-weight:700">
+        <i class="fa-thin fa-pen-nib"></i></div>
+           </form>
+            </div>
+          </div>
+        </div>
+     </td>
+     <td>
+      <div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="col" dir="ltr">
+          <div class="card v">
+          
+            <div class="card-body">
+           <form class="hjk">
+           <img src="op.svg.jfif" class="opp">
+            <div class="ad">
+            <label > ID :</label>
+            <input type="text" placeholder="0" id="uu1" class="uu" ><br>
+
+            <label> Name :     </label>
+            <input type="text" placeholder="..." class="uu"><br>
+  
+            <label> Gender :</label>
+            <input type="radio" name="a" value="mail" class="uu" checked> mail
+            <input type="radio" name="a" value="femail" class="uu">femail
+           <br>
+
+            <label> phone :</label>
+            <input type="tel" placeholder="..." class="uu" ><br>
+
+            <label> Email:</label>
+            <input type="email" placeholder="..." class="uu" ><br>
+
+            <label> stading:</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+
+            <label> name Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Gps Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Trinning :</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+        </div>
+        <div style="font-family:'Font Awesome 5 Free'; font-weight:700">
+        <i class="fa-thin fa-pen-nib"></i></div>
+           </form>
+            </div>
+          </div>
+        </div>
+     </td>
+     
+    </tr>
+  
+  
+    <tr>
+      <td><div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="col" dir="ltr">
+          <div class="card v">
+          
+            <div class="card-body">
+           <form class="hjk">
+           <img src="op.svg.jfif " class="opp">  
+            <div class="ad">
+            <label > ID :</label>
+            <input type="text" placeholder="0" id="uu1" class="uu" ><br>
+
+            <label> Name :     </label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Gender :</label>
+            
+            <input type="radio" name="a" value="mail" class="uu" checked> mail
+            <input type="radio" name="a" value="femail" class="uu">femail
+           <br>
+
+            <label> phone :</label>
+            <input type="tel" placeholder="..." class="uu" ><br>
+
+            <label> Email:</label>
+            <input type="email" placeholder="..." class="uu" ><br>
+
+            <label> stading:</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+
+            <label> name Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Gps Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Trinning :</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+        </div>
+        <div style="font-family:'Font Awesome 5 Free'; font-weight:700">
+        <i class="fa-thin fa-pen-nib"></i></div>
+           </form>
+            </div>
+          </div>
+        </div>
+      </td>
+   
+      <td><div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="col" dir="ltr">
+          <div class="card v">
+          
+            <div class="card-body">
+           <form class="hjk">
+           <img src="op.svg.jfif" class="opp">
+            <div class="ad">
+
+            <label > ID :</label>
+            <input type="text" placeholder="0" id="uu1" class="uu" ><br>
+
+            <label> Name :     </label>
+            <input type="text" placeholder="..." class="uu"><br>
+            <label> Gender :</label>
+            
+            <input type="radio" name="a" value="mail" class="uu" checked> mail
+            <input type="radio" name="a" value="femail" class="uu">femail
+           <br>
+            <label> phone :</label>
+            <input type="tel" placeholder="..." class="uu" ><br>
+
+            <label> Email:</label>
+            <input type="email" placeholder="..." class="uu" ><br>
+
+            <label> stading:</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+
+            <label> name Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Gps Un :</label>
+            <input type="text" placeholder="..." class="uu"><br>
+
+            <label> Trinning :</label>
+            <input type="text" placeholder="..." class="uu" ><br>
+        </div>
+        <div style="font-family:'Font Awesome 5 Free'; font-weight:700">
+        <i class="fa-thin fa-pen-nib"></i></div>
+           </form>
+            </div>
+          </div>
+        </div>
+      </td>
+        <td><div class="row row-cols-1 row-cols-md-1 g-2">
+          <div class="col" dir="ltr">
+            <div class="card v">
+            
+              <div class="card-body">
+             <form class="hjk">
+             <img src="op.svg.jfif" class="opp">
+              <div class="ad">
+
+              <label > ID :</label>
+              <input type="text" placeholder="0" id="uu1" class="uu" ><br>
+
+              <label> Name :     </label>
+              <input type="text" placeholder="..." class="uu"><br>
+
+              <label> Gender :</label>
+              
+              <input type="radio" name="a" value="mail" class="uu" checked> mail
+              <input type="radio" name="a" value="femail" class="uu">femail
+             <br>
+              <label> phone :</label>
+              <input type="tel" placeholder="..." class="uu" ><br>
+  
+              <label> Email:</label>
+              <input type="email" placeholder="..." class="uu" ><br>
+
+              <label> stading:</label>
+              <input type="text" placeholder="..." class="uu" ><br>
+
+              <label> name Un :</label>
+              <input type="text" placeholder="..." class="uu"><br>
+
+              <label> Gps Un :</label>
+              <input type="text" placeholder="..." class="uu"><br>
+
+              <label> Trinning :</label>
+              <input type="text" placeholder="..." class="uu" ><br>
+
+          </div> 
+          
+          <div style="font-family:'Font Awesome 5 Free'; font-weight:700">
+          <i class="fa-thin fa-pen-nib"></i></div>
+             </form>
+              </div>
+            </div>
+          </div>
+        </td>
+     
+    </tr>
+    
+   
+  
+</table>
+
+<br><br>
+<br>
+
+<a href="#" class="click2">اضافة  </a>
+<div class="popup_box4">
+<div class="btns3">
+<a href="#"  class="btn11 ">EDITE   </a><br><br><br>
+<a href="#" class="btn12" > DELETE   </a>
+</div>
+</div>
+
+
+
+<br>
+<br><br><br>
+        
+
+         <!-- فورم تسجيل الدخول  2 -->
+      
+        
+      <form dir="rtl" name="f" method="post" class="row g-3 needs-validation" novalidate>
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col">
+
+              <nav class="navbar navbar-expand-1g $white">
+
+                  <div class="container-fluid">
+
+                   <button class="u" ><b>تسجيل دخول </b></button>
+
+                  
+                       
+                  
+                    </div>
+                  
+                </nav>
+        
+  
+  <br><br>
+
+  <div>
+  
+  <input style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="text " name="name1" placeholder= " &#xf007; الاسم الاول"  class="g">
+
+  <input  style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="text " name="name1"  placeholder=" &#xf500; الاسم الاخير " class="g" ><br>
+</div>
+  
+  <input style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="email" name="email1" placeholder="&#xf0e0; الايميل " class="b"><br>
+  
+  
+  <input style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="password" name="password" placeholder=" &#xf023; كلمة المرور " class="b"><br>
+  
+  <input style=" font-family: 'font awesome 5 free'; font-weight: 700;"  type="password" name="password" placeholder=" &#xf023; تأكيد كلمة المرور " class="b"><br>
+  
+  <p> هل لديك حساب بالفعل ؟<b><span class="c"> تسجيل الدخول </span></b> </p> 
+
+  <input type="submit" name="botton " value="الخطوة التالية " class="d">
+
+  </form>
+
+    </div>
+
+    <div class="col d-none d-sm-block ">
+
+      <div>
+
+          <img src="Mask Group -1 (1).svg" class="e">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+    <script src="brands.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

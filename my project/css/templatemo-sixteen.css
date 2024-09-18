@@ -1,0 +1,498 @@
+:root{
+    --main-color:#f33f3f;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* start global rules  */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* medium  */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large  */
+
+    .container{
+        width: 1170px;
+    }
+
+/* end global rules  */
+/* start heder  */
+header{
+    background-color: #232323;
+    min-height: 80px;
+    
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container ul{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+@media(max-width:992px){
+    header .container ul{
+        display: none;
+    }
+    header .container .toggle-menu:hover + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0 0 0 /50%);
+        z-index: 1;
+    }
+    header nav .toggle-menu:hover + ul li.active {
+        border-bottom: 1px solid #f33f3f;
+    }
+    header nav .toggle-menu:hover + ul li{
+        text-align: center;
+    }
+    header nav .toggle-menu:hover + ul li a.active{
+        border: none;
+    }
+}
+header .container .toggle-menu{
+    margin-top: 30px;
+    color: white;
+    font-size: 23px;
+    color: var(--main-color);
+}
+@media(min-width:992px){
+    header .container .toggle-menu{
+        display: none;
+    }
+}
+header .container ul li{
+    list-style: none;
+    padding: 30px 20px;
+    
+}
+header .container ul li a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    padding: 0 5px 30px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+header .container ul li a.active{
+    border-bottom: 3px solid #f33f3f;
+}
+header .container ul li:hover a{
+    border-bottom: 3px solid #f33f3f;
+    color: #d16d6d;
+    letter-spacing: 0.2px;
+}
+header h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+@media(max-width:992px){
+    header h2{
+        margin-top: 30px;
+    }
+}
+header h2 span{
+    font-style: normal;
+    color: #f33f3f;
+}
+/* end header  */
+/* start landing  */
+.landing{
+    background-image: url(../image/slide_01.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+.landing .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    width: fit-content;
+    text-align: center;
+}
+.landing .text h4{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.landing .text p{
+    font-size: 62px;
+    text-transform: uppercase;
+    color: white;
+}
+@media(max-width:992px){
+    .landing .text p{
+        font-size: 40px;
+        padding: 0 10px;
+    }
+}
+.landing ul{
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.landing ul li{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    margin-right: 15px;
+    border-radius: 50%;
+    list-style: none;
+}
+.landing ul li:not(:first-of-type){
+    opacity: 0.5;
+}
+/* end landing  */
+/* start section  */
+.section{
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+.section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+@media(max-width:767px){
+    .section .container{
+        flex-direction: column;
+    }
+    .section h2{
+        margin-bottom: 20px;
+    }
+}
+.section .container::before{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: #bbb;
+}
+.section .section-link a{
+    margin-top: -35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f33f3f;
+}
+.section .section-link i{
+    color: var(--main-color);
+    font-size: 12px;
+}
+.section h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+/* end section  */
+/* start portfolio  */
+.portfolio{
+    padding-top: 100px;
+}
+.portfolio .container .card {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:40px 20px;
+}
+.portfolio .container .card .box{
+    
+    border: 1px solid #eee;
+    
+}
+.portfolio .container .box img{
+    width: 100%;
+}
+
+/* @media(max-width:992px){
+    .portfolio .container .card .box{
+        width: calc(100% / 3);
+    }
+} */
+.portfolio .container .card .box .text{
+    padding: 30px;
+}
+.portfolio .container .card .box .text .price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.portfolio .container .card .box .text .price a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #1a6692;
+}
+.portfolio .container .card .box .text .price p{
+    font-size: 18px;
+    color: #121212;
+}
+.portfolio .container .card .box .evaluation p{
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+.portfolio .container .card .box .evaluation-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio .container .card .box .evaluation-foot ul{
+    display: flex;
+}
+.portfolio .container .card .box .evaluation-foot ul li{
+    list-style: none;
+    font-size: 12px;
+    margin-right: 3px;
+    color: var(--main-color);
+}
+.portfolio .container .card .box .evaluation-foot span{
+    font-size: 13px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+/* end portfolio  */
+/* start about  */
+.about{
+    padding-top: 80px;
+}
+.about .container{
+    position: relative;
+}
+.about .container::before{
+    content: "";
+    width: calc(100% - 30px); 
+    height: 1px;
+    background-color: #777;
+    position: absolute;
+    left: 15px;
+    bottom: -65px;
+}
+.about .container h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+    position: relative;
+}
+@media(max-width:767px){
+    .about{
+        margin-bottom: 130px;
+    }
+    .about .container h2{
+        text-align: center;
+    }
+}
+.about .container h2::before{
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: -3px;
+    height: 1px;
+    width: 100%;
+    background-color: #bbb;
+}
+.about .container .about-card{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:767px){
+    .about .container .about-card{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .about .container .about-card .image{
+        order: 1;
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .about .container .about-card .text{
+        order: 2;
+        flex-basis: 100%;
+    }
+}
+.about .container .about-card .text{
+    flex-basis: 50%;
+    
+}
+.about .container .about-card .text h4{
+    font-size: 17px;
+    color: #1a6692;
+    margin-bottom: 20px;
+}
+.about .container .about-card .text p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+.about .container .about-card .text p a{
+    color: #007bff;
+    text-decoration: none;
+}
+.about .container .about-card .text ul li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.about .container .about-card .text ul li a{
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all .3s;
+    position: relative;
+    padding-left: 13px;
+}
+.about .container .about-card .text ul li a::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #777;
+    position: absolute;
+    left: 0;
+    top: 47%;
+}
+.about .container .about-card .text ul li:hover a{
+    color: var(--main-color);
+}
+.about .container .about-card .text button{
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s;
+}
+.about .container .about-card .text button:hover{
+    background-color:#232323 ;
+    
+}
+.about .container .about-card .image{
+    flex-basis: 48%;
+}
+.about .container .about-card .image img{
+    max-width: 100%;
+}
+/* end about */
+.parent .container{
+    position: relative;
+}
+.parent .container .foot{
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+/* .boxs .container .foot::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    position: absolute;
+    left: 0;
+    top: -50%;
+} */
+.parent .container .foot .text h4{
+    font-size: 17px;
+    color: #1a6692;
+    margin-bottom: 15px;
+}
+.parent .container .foot .text p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+.parent .container button{
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+    border: none;
+}
+.parent .container button:hover{
+    background-color: #232323;
+}
+/* start footer  */
+footer{
+    padding: 100px 0;
+}
+footer .container{
+    text-align: center;
+}
+footer .container p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+footer .container p a{
+    color: #f33f3f;
+    margin-left: 3px;
+    text-decoration: none;
+}
+/* end footer  */

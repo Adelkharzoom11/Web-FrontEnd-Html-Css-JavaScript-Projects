@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Noto+Kufi+Arabic:wght@100;200;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Noto Kufi Arabic', sans-serif !important;
+}
+
+nav{
+    background: linear-gradient(269.16deg, #6A86F4 1.85%, #7FA6E9 21.37%, #8DB4E8 40.29%, #A7CEE4 71.75%, #B2D6E5 81.14%, #C4E1E6 90.55%, #D2ECE9 94.92%);
+}
+
+.navbar-toggler-icon {
+    /* font-size: var(--bs-navbar-toggler-font-size); */
+    line-height: 1;
+    border:1px solid;
+    border-radius: 5px;
+}
+
+.blog-item{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.blog-item img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 400px;
+}
+
+
+.blog-item p{
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+
+@media screen and (max-width : 450px) {
+    .blog-item img{
+        width: 70%;
+        height: 200px;
+    }
+   .cards .bord{
+        height: 280px;
+    }
+     .cards .bord a p{
+        padding-bottom: 20px;
+     }
+}
+
+
+@media screen and (min-width : 451px) and (max-width:800px) {
+    .blog-item img{
+        width: 70%;
+        height: 400px;
+        
+    }
+    .blog-item p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width : 801px) and (max-width:1650px) {
+    .blog-item img{
+        width: 50%;
+        height: 350px;
+        
+    }
+    .blog-item p{
+        width: 60%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width : 1651px) and (max-width:3315px) {
+    .blog-item img{
+        width: 50%;
+        height: 650px;
+        
+    }
+    .blog-item p{
+        width: 50%;
+        font-size: 22px;
+        font-weight: 700;
+    }
+}

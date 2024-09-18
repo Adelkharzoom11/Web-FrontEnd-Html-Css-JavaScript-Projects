@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Project Alpha",
+        "description": "Initial project setup",
+        "tasks": [
+            {
+                "taskId": 1,
+                "title": "Setup project",
+                "description": "Initialize repository and setup initial files",
+                "completed": true,
+                "dueDate": "2024-08-15"
+            },
+            {
+                "taskId": 2,
+                "title": "Create database schema",
+                "description": "Design and implement the database schema",
+                "completed": false,
+                "dueDate": "2024-08-20"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Project Beta",
+        "description": "Development phase",
+        "tasks": [
+            {
+                "taskId": 1,
+                "title": "Develop API",
+                "description": "Create REST API endpoints",
+                "completed": false,
+                "dueDate": "2024-09-01"
+            }
+        ]
+    }
+]

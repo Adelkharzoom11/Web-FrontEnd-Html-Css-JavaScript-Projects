@@ -1,0 +1,429 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* ******  start header  ********* */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(86,98,112,1) 0%, rgba(40,52,68,1) 100%);
+}
+
+header .header{
+    width: 70%;
+}
+header .header a{
+    text-decoration: none;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+header .header span a{
+    color: #2AF598;
+}
+
+/* @media ( max-width:850 ) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .hero .gg{
+        width: 720px;
+     }
+} */
+
+ /* ****** end header *******   */
+
+ .hero{
+    text-align: center;
+    position: relative;
+    height: 600px;
+ }  
+
+ .hero .Group{
+    position: absolute;
+    left: 1060px;
+    top: 256px;
+    width: 100px;
+    height: 65px;
+ }
+
+ .hero .Group1{
+    position: absolute;
+    left: 1088px;
+    top: 330px;
+    width: 35px;
+    height: 35px;
+ }
+
+ .hero .Group2{
+    position: absolute;
+    left: 280px;
+    top: 275px;
+    width: 35px;
+    height: 35px;
+ }
+
+ .hero .Group3{
+    position: absolute;
+    left: 310px;
+    top: 340px;
+    width: 25px;
+    height: 25px;
+ }
+
+.hero .lineargradent{
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    top: 475px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 83.65%);
+}
+
+
+
+ .hero .absolute{
+    position: absolute;
+    top: 90px;
+ }
+ .hero h1, p, .search{
+    padding-top: 30px;
+ }
+.hero img{
+    width: 100%;
+    height: 100%;
+}
+ .hero h1{
+    font-size: 31px;
+    color: aliceblue;
+    width: 700px;
+ }
+ .hero  p{
+    font-size: 14px;
+    color: aliceblue;
+ }
+
+
+
+.absolute{
+    text-align: center;
+    justify-content: center;
+    margin-left: 350px;
+}
+
+.absolute .search input{
+    width: 250px;
+    height: 50px;
+    border-radius: 40px;
+    padding-left: 10px;
+    background-color: none;
+    color: black;
+    
+}
+
+.absolute .search img{
+    width: 40px;
+    height: 40px;
+    z-index: 55;
+    position: absolute;
+    right: 230px;
+    bottom: 5px;
+    border-color: aliceblue;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.section .icons{
+    display: flex;
+    align-items: center;
+}
+
+.section .icons div h1{
+    padding-bottom: 10px;
+}
+
+.section .icons p{
+    font-size: 14px;
+}
+
+.section .icons img{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.seck{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-around;
+}
+
+.items div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items div img{
+    width: 20px;
+    height: 20px;
+    align-items: end;
+    margin-top: 30px;
+}
+
+section .image{
+    background-color: #C1D0E4;
+    border-radius: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+section .image img{
+    width: 100%;
+}
+
+section .image .wight{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+   
+}
+
+section .image .wight img{
+    width: 80px;
+    height: 20px;
+}
+
+section .image .wight .a{
+    font-size: 24px ;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+section .image .wight .plus{
+    display: flex;
+    justify-content: space-between;
+    
+}
+section .image .wight .plus p{
+        font-size: 28px;
+        font-weight: bold;
+
+}
+section .image .wight .plus img{
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+}
+
+
+section .InteriorPlantReference {
+    margin-top: 50px;
+}
+
+section .InteriorPlantReference {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+section .InteriorPlantReference  h1{
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+section .images{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+.images .livingroom{
+    background-color: rgba(0, 0, 0, 30%);
+    color: white;
+    position: absolute;
+
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+}
+.images .livingroom p{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 130px;
+    padding-top: 110px;
+
+}
+
+
+section .images .left{
+        height: 600px;
+
+}
+section .images .left img{
+    width: 400px;
+}
+section .images .right img{
+    width: 400px;
+    height: 540px;
+    margin-left: 20px;
+}
+
+.section{
+    padding-top: 30px;
+    display: flex;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.section .im{
+    align-items: center;
+    margin-top: 105px;
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+    margin-left: 50px;
+
+}
+
+
+.section .items h1{
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.section .items .it{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 600px;
+}
+
+.section .items .it div p{
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.section .items .it div{
+    display: block;
+    margin-left: 15px;
+    width: 500px;
+}
+
+.section .items .it img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.footer{
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(86,98,112,1) 0%, rgba(40,52,68,1) 100%);
+
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.footer .q1 h1{
+    padding-bottom: 30px;
+    color: aliceblue;
+}
+
+.footer .q1 input{
+    width: 250px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px;
+    margin-right:40px ;
+}
+
+.footer .q1 button{
+    border-radius: 30px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(42,245,152,1) 0%, rgba(0,158,253,1) 100%);
+    color: white;
+    position: absolute;
+    right: 1075px;
+    top: 2980px;
+    z-index: 11;
+
+}
+
+
+
+.footer .foot{
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.footer .foot span{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footer .foot .q4{
+    padding-bottom: 52px;
+}
+
+.footer .foot .q5{
+    padding-bottom: 42px;
+}
+
+.footer .end{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 2px;
+    width: 80%;
+    background-color: aliceblue;
+    margin-top: 30px;
+
+}
+
+.footer .theend p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}

@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*  start header   */
+header{
+    background-color: #161A1A;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+    align-items: center;
+}
+header .image img{
+    width: 80px;
+    height:40px;
+    margin-top: 5px;
+}
+header .li ol{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-between;
+}
+header .li ol a{
+    text-decoration: none;
+    padding: 25px 25px;
+    align-items: center;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/*  end header   */
+
+/*  start hearow   */
+.hearow{
+    background-image: url("image/a.png");
+    height: 88vh;
+    background-size: cover;
+
+}
+
+.hearow .q1{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 170px ;
+    
+}
+.hearow .q1>p{
+    font-size: 28px;
+}
+
+.hearow .q1 div{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+}
+
+
+.hearow .q1 div p{
+    
+    margin: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    justify-content: space-between;
+    
+   
+
+
+    
+}
+
+.hearow .q1 div #a1{
+    margin-left: 500px;
+}
+
+.hearow .q1 div #a2{
+    margin-right: 500px;
+    color: #FFFFFF;
+    background-color: inherit;
+}
+
+.hearow .q1 :last-child{
+    font-size: 18px;
+}
+.flow{
+    background-color: #161A1A;
+    display: flex;
+
+}
+.flow img{
+    height: 80vh;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.flow div{
+    color: #FFFFFF;
+    align-items: center;
+    width: 30%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.flow .icon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.flow .icon p{
+    padding-left: 15px;
+    font-size: 24px;
+    padding-bottom: 4px;
+}
+.flow .icon img{
+    width: 40px;
+    height: 40px;
+}
+.flow div #a1{
+    padding-left: 55px;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+.Premium{
+    padding-top: 50px;
+    background-color: #161A1A;
+}
+.Premium h3{
+    color: #FFFFFF;
+    text-align: center;
+
+}
+.Premium .icon2{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.Premium .icon2 .icon{
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.Premium .icon2 .icon img{
+    background-color: #363535;
+    border-radius: 50px;
+}
+
+.Premium .icon2 .icon p{
+    padding-top: 10px;
+}
+
+.Premium .icon2 .icon #q1{
+    font-size: 12px;
+    text-align: center;
+}
+
+.Premium h6{
+    color: #AFAFAF;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.contener{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+
+.contener .squr{
+    margin-right: 20px;
+    margin-left: 20px;
+    border: #FFFFFF solid;
+    padding: 8px;
+    padding-right: 30px;
+    border-radius: 12px;
+
+}
+.contener .squr #q4{
+    padding: 15px;
+}
+
+.contener .squr #aa{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.contener .squr #aa p{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.buttoom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+.buttoom button{
+    padding:10px 20px;
+    margin-left:35px ;
+    margin-right: 35px;
+    border-radius: 20px;
+margin-bottom: 30px;
+}
+
+.buttoom #ww1{
+    background-color: inherit;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+
+}
+
+.footer{
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #AFAFAF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+.footer img{
+padding-top: 40px;}
+.footer ol{
+    list-style-type: none;
+}
+.footer ol li{
+    padding: 7px;
+}
+.footer #icon123{
+    display: flex;
+}
+.footer #icon123 li{
+    padding: 30px;
+}
+
+
